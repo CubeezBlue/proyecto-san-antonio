@@ -5,7 +5,6 @@ let user = {
     contraseña: ''
 }
 
-const existeUsuario = JSON.parse(localStorage.getItem("usuario")); // localstorage -> {nombre:"",contraseña:""}
 const buttonLogin = document.getElementById("boton-login");
 const inputs = document.querySelectorAll("input");
 

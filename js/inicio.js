@@ -11,9 +11,12 @@ const nota1 = document.querySelector("#nota-1");
 const nota2 = document.querySelector("#nota-2");
 const nota3 = document.querySelector("#nota-3");
 const tabla = document.querySelector(".tabla");
+const usuario = JSON.parse(localStorage.getItem("usuario"));
+const usuarioLogin = Object.values(usuario)
+
 
 //Saludo
-saludo.innerHTML = `<h2 class="title">Bienvenido sr/sra </h2>`
+saludo.innerHTML = `<h2 class="title">Bienvenido sr/sra ${usuarioLogin[0]}</h2>`
 
 //Alumno Tabla
 const nombreAlumno = Alumnos.map(nombre => {
