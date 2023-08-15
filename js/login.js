@@ -26,7 +26,6 @@ buttonLogin.addEventListener("click", () => {
     if (userFind) {
         localStorage.setItem("usuario", JSON.stringify(userFind));
         window.location = "pages/inicio.html"
-            //buttonLogin.innerHTML = `<a href="../pages/inicio.html</a>"`;
     } else {
         Swal.fire({
             icon: 'error',
