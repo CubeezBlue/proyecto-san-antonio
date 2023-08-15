@@ -6,5 +6,37 @@
 }
 
 //Globales
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #f7eee6;
+}
+
+main {
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+}
+
+button {
+    border: none
+}
+
 //Imports
 @import"pages/login.scss";
+@import"pages/inicio.scss";

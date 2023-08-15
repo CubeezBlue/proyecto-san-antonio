@@ -1,0 +1,73 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    .search {
+        height: 35px;
+        display: flex;
+        label {
+            border: 1px solid black;
+            border-radius: 0px 10px 10px 0px;
+            width: 33px;
+        }
+        svg {
+            padding: 0.1rem;
+        }
+    }
+    .boton-agregar {
+        height: 40px;
+        border-radius: 1rem;
+        border: 2px solid #4f251d;
+        background-color: whitesmoke;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+}
+
+.tabla {
+    border: 1px solid black;
+    gap: 2rem;
+    width: 60%;
+    margin: auto;
+    th,
+    td {
+        border: 1px solid black;
+        padding-left: 0.5rem;
+    }
+    .boton-tabla {
+        border: none;
+        padding: 0;
+        width: 3%;
+    }
+    .nombre-completo {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.ingreso-alumno {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    row-gap: 2rem;
+    .ingreso-nombre {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+    .ingreso-curso {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .ingreso-nota {
+        grid-row: 3;
+        input {
+            max-width: 50px;
+        }
+        label {
+            max-width: 100px;
+        }
+    }
+}

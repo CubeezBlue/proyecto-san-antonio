@@ -3,15 +3,36 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #f7eee6; }
+
+main {
+  min-height: 100%; }
+
+footer {
+  margin-top: auto; }
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  align-self: center; }
+
+button {
+  border: none; }
+
 .header {
   width: 100%;
   height: 100px;
-  background: #866b52;
-  background: linear-gradient(0deg, #866b52 0%, #b49375 100%, #866b52 100%);
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 0.1rem; }
+  background: #672d22;
+  background: linear-gradient(0deg, #672d22 0%, #471b13 100%, #672d22 100%); }
   .header .img-header {
     padding-left: 2rem; }
     .header .img-header img {
@@ -19,7 +40,8 @@
 
 .bg-login {
   display: flex;
-  background-color: #f7eee6; }
+  background-color: #f7eee6;
+  margin-top: 0.1px; }
   .bg-login h1 {
     margin: auto;
     padding: 2rem;
@@ -28,7 +50,8 @@
   .bg-login .login {
     display: flex;
     flex-direction: column;
-    gap: 2rem; }
+    gap: 2rem;
+    padding-left: 5rem; }
     .bg-login .login .inp-login {
       display: flex;
       flex-direction: column;
@@ -43,22 +66,93 @@
         padding: 1rem;
         border-style: none;
         border: 1px solid black; }
-    .bg-login .login .boton {
+    .bg-login .login .botones .boton {
+      display: flex;
+      margin: auto;
       width: 100px;
       height: 50px;
       border-style: none;
       border: 2px solid #4f251d;
       border-radius: 2rem;
-      margin-top: 30px;
-      position: absolute;
-      right: 55%;
-      top: 70vh; }
+      cursor: pointer;
+      justify-content: center;
+      align-items: center; }
   .bg-login .bg-img-login {
     width: 50%;
-    height: 100vh; }
+    min-height: 100%; }
     .bg-login .bg-img-login .img-login {
       width: 100%;
-      height: 100%;
+      height: 637.9px;
+      min-height: 100%;
       background-image: url(https://sapsalesianos.com.ar/wp-content/uploads/2020/12/IMG_8246.jpg);
       background-size: cover;
       background-position: calc(70%); }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #672d22;
+  background: linear-gradient(0deg, #672d22 0%, #471b13 0%, #672d22 100%);
+  display: flex;
+  justify-content: end; }
+  .footer .img-footer img {
+    max-height: 100px; }
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem; }
+  .main-header .search {
+    height: 35px;
+    display: flex; }
+    .main-header .search label {
+      border: 1px solid black;
+      border-radius: 0px 10px 10px 0px;
+      width: 33px; }
+    .main-header .search svg {
+      padding: 0.1rem; }
+  .main-header .boton-agregar {
+    height: 40px;
+    border-radius: 1rem;
+    border: 2px solid #4f251d;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    font-weight: bold; }
+
+.tabla {
+  border: 1px solid black;
+  gap: 2rem;
+  width: 60%;
+  margin: auto; }
+  .tabla th,
+  .tabla td {
+    border: 1px solid black;
+    padding-left: 0.5rem; }
+  .tabla .boton-tabla {
+    border: none;
+    padding: 0;
+    width: 3%; }
+  .tabla .nombre-completo {
+    display: flex;
+    justify-content: space-around; }
+
+.ingreso-alumno {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  row-gap: 2rem; }
+  .ingreso-alumno .ingreso-nombre {
+    grid-column: span 3;
+    grid-row: 1; }
+  .ingreso-alumno .ingreso-curso {
+    grid-row: 2;
+    grid-column: 2; }
+  .ingreso-alumno .ingreso-nota {
+    grid-row: 3; }
+    .ingreso-alumno .ingreso-nota input {
+      max-width: 50px; }
+    .ingreso-alumno .ingreso-nota label {
+      max-width: 100px; }
