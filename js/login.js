@@ -25,7 +25,7 @@ buttonLogin.addEventListener("click", () => {
     const userFind = base_data.find((registro) => user.usuario === registro.usuario && user.contraseña === registro.contraseña)
     if (userFind) {
         localStorage.setItem("usuario", JSON.stringify(userFind));
-        document.location = "../pages/inicio.html"
+        window.location = "../pages/inicio.html"
     } else {
         Swal.fire({
             icon: 'error',
